@@ -119,7 +119,7 @@ function sound_transitions(ttype, var, ttime)
 fe.add_transition_callback("sound_transitions")
 
 //System count text info
-local textgc = fe.add_text( "System Count: [ListEntry]-[ListSize]", flx*0.001, fly*0.9, flw*0.4, flh*0.025  );
+local textgc = fe.add_text( "System Count: [ListEntry]-[ListSize]", flx*0.001, fly*0.88, flw*0.4, flh*0.025  );
 textgc.set_rgb( 225, 255, 255 );
 //textgc.style = Style.Bold;
 textgc.align = Align.Left;
