@@ -47,7 +47,7 @@ if ( my_config["enable_static"] == "Yes" )
 //adjust the values below for the static preview video snap
    const SNAPBG_ALPHA = 200;
    local snapbg=null;
-   snapbg = fe.add_image( "static.mp4", flx*0.165, fly*0.001, flw*0.45, flh*0.65 );
+   snapbg = fe.add_image( "static.mp4", flx*0.1745, fly*0.001, flw*0.47, flh*0.67 );
    snapbg.trigger = Transition.EndNavigation;
    snapbg.skew_y = 0;
    snapbg.skew_x = 0;
@@ -59,7 +59,7 @@ if ( my_config["enable_static"] == "Yes" )
 }
  else
  {
- local temp = fe.add_text("", flx*0.185, fly*0.001, flw*0.45, flh*0.65 );
+ local temp = fe.add_text("", flx*0.1745, fly*0.001, flw*0.47, flh*0.67 );
 // temp.bg_alpha = SNAPBG_ALPHA;
  }
 
@@ -71,7 +71,7 @@ snap.preserve_aspect_ratio = true;
 
 //now position and pinch surface of snap
 //adjust the below values for the game video preview snap
-surface_snap.set_pos(flx*0.175, fly*0.001, flw*0.47, flh*0.67);
+surface_snap.set_pos(flx*0.1745, fly*0.001, flw*0.47, flh*0.67);
 surface_snap.skew_y = 0;
 surface_snap.skew_x = 0;
 surface_snap.pinch_y = 0;
